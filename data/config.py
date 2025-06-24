@@ -18,12 +18,16 @@ API_HEADERS = {
 }
 
 CITY = "Bangalore"
-3333333
+# Approximate bounding box for Bangalore (min_lng, min_lat, max_lng, max_lat)
+BANGALORE_BBOX = (77.45, 12.8, 77.75, 13.2)
+
+
 POLLUTANTS = ["pm25", "pm10", "no2"]
 
 # API endpoints
 OPENAQ_BASE_URL = "https://api.openaq.org/v3/latest"
 OPENAQ_HISTORICAL_URL = "https://api.openaq.org/v3/measurements"
+OPENAQ_LOCATIONS_URL = "https://api.openaq.org/v3/locations" 
 
 SAVE_RAW_JSON = True   # Optionally save API response to disk
 REQUEST_TIMEOUT = 10   # Seconds
